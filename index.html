@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NoA-ASIS_AI — Asistente de reuniones</title>
+<meta name="description" content="NoA-ASIS_AI convierte la grabación de una reunión en un resumen ejecutivo con decisiones y tareas.">
+<style>
+  /* Colores base; se invierten solos en modo oscuro */
+  :root { --fondo:#f7f6f2; --texto:#1c1f24; --suave:#5b626d; --linea:#dcd9d0; --acento:#0f5c4a; --tarjeta:#ffffff; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fondo:#14171b; --texto:#e9e7e1; --suave:#a2a8b1; --linea:#2c3138; --acento:#6fcfb4; --tarjeta:#1b1f24; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:56px 20px 40px; }
+  .marca { font-size:14px; letter-spacing:.12em; text-transform:uppercase; color:var(--acento); font-weight:600; }
+  h1 { font-size:clamp(30px, 6vw, 44px); line-height:1.15; margin:12px 0 16px; letter-spacing:-.01em; }
+  h2 { font-size:21px; margin:44px 0 12px; }
+  p { margin:0 0 14px; }
+  .entrada { font-size:19px; color:var(--suave); }
+  ol.pasos { list-style:none; padding:0; margin:0; counter-reset:paso; }
+  ol.pasos li { counter-increment:paso; background:var(--tarjeta); border:1px solid var(--linea); border-radius:10px; padding:16px 18px 16px 58px; margin-bottom:10px; position:relative; }
+  ol.pasos li::before { content:counter(paso); position:absolute; left:18px; top:15px; width:28px; height:28px; border-radius:50%; background:var(--acento); color:var(--fondo); font-weight:700; font-size:15px; display:grid; place-items:center; }
+  ul { padding-left:20px; margin:0 0 14px; }
+  li { margin-bottom:6px; }
+  a { color:var(--acento); }
+  footer { max-width:720px; margin:0 auto; padding:24px 20px 48px; border-top:1px solid var(--linea); color:var(--suave); font-size:15px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="marca">NoA · Medellín, Colombia</div>
+  <h1>NoA-ASIS_AI: de la grabación de tu reunión a un resumen ejecutivo</h1>
+  <p class="entrada">Subes el audio de una reunión y recibes por Telegram un resumen con las decisiones, las tareas y sus responsables. Sin tomar notas.</p>
+
+  <h2>Cómo funciona</h2>
+  <ol class="pasos">
+    <li>Guardas la grabación en la carpeta de Google Drive que NoA te asigna, o la envías por Telegram.</li>
+    <li>El servicio transcribe el audio y prepara el resumen con inteligencia artificial.</li>
+    <li>Recibes el resumen en tu chat de Telegram, junto con tu saldo de minutos.</li>
+  </ol>
+
+  <h2>Qué recibes</h2>
+  <ul>
+    <li>Resumen ejecutivo de la reunión.</li>
+    <li>Decisiones tomadas.</li>
+    <li>Tareas con responsable y fecha, cuando se mencionan.</li>
+    <li>Temas que quedaron abiertos.</li>
+  </ul>
+
+  <h2>Uso de Google Drive</h2>
+  <p>NoA-ASIS_AI usa Google Drive únicamente para recibir las grabaciones que tú decides subir a la carpeta que NoA te asigna. La aplicación no accede a tu Drive personal ni a ningún otro archivo tuyo. El detalle está en la <a href="privacidad.html">Política de Privacidad</a>.</p>
+
+  <h2>Contacto</h2>
+  <p>NoA — agencia de automatización y optimización de procesos.<br>
+  Correo: <a href="mailto:noa.neuraloperations@gmail.com">noa.neuraloperations@gmail.com</a></p>
+</main>
+<footer>
+  © 2026 NoA · <a href="privacidad.html">Política de Privacidad</a>
+</footer>
+</body>
+</html>
